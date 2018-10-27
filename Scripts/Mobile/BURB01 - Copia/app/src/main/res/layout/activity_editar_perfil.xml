@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mathr.burb01.Home"
+    android:background="?attr/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                app:civ_border="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="?attr/textcolor"
+                app:civ_shadow="true"
+                app:civ_shadow_color="@android:color/black"
+                app:civ_shadow_radius="1"
+                android:id="@+id/perfilImagem"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"/>
+            <View
+                android:visibility="gone"
+                android:background="@drawable/circulo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="140dp"
+                android:layout_height="140dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:padding="6dp"
+                android:text="@string/Mudar_Foto"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Nome" />
+
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/textcolor"
+                android:hint="@string/Nome"
+                android:inputType="textCapWords"
+                android:textColor="?attr/textcolor"
+                android:textColorHint="?attr/texthintcolor"/>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Saldo" />
+
+            <EditText
+                android:id="@+id/edtSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/textcolor"
+                android:hint="@string/SaldoRS"
+                android:textColor="?attr/textcolor"
+                android:inputType="number"
+                android:textColorHint="?attr/texthintcolor"/>
+
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Peso" />
+
+            <EditText
+                android:id="@+id/edtPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/textcolor"
+                android:hint="@string/Peso"
+                android:textColor="?attr/textcolor"
+                android:textColorHint="?attr/texthintcolor"/>
+
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Altura" />
+
+            <EditText
+                android:id="@+id/edtAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/textcolor"
+                android:hint="@string/Altura"
+                android:textColor="?attr/textcolor"
+                android:textColorHint="?attr/texthintcolor"/>
+
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Situacao" />
+
+            <EditText
+                android:id="@+id/edtSituacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/textcolor"
+                android:hint="@string/Situacao"
+                android:textColor="?attr/textcolor"
+                android:textColorHint="?attr/texthintcolor"/>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Renda" />
+
+            <EditText
+                android:id="@+id/edtRenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/textcolor"
+                android:hint="@string/Renda"
+                android:textColor="?attr/textcolor"
+                android:textColorHint="?attr/texthintcolor"/>
+
+            <TextView
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Sexo" />
+
+            <EditText
+                android:id="@+id/edtSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/textcolor"
+                android:hint="@string/Sexo"
+                android:textColor="?attr/textcolor"
+                android:textColorHint="?attr/texthintcolor"/>
+
+
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/salvarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/botao_salvar"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:fButtonColor="@color/salvarPerfil"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+</ScrollView>

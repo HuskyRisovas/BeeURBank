@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.example.mathr.burb01.Auth.SignUp"
+    android:id="@+id/activitySignUpLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activitySignUpTxtCriarConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criar conta"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="46sp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/activitySignUpTxtNome"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/Nome"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/edtNome"
+            android:textSize="22sp"
+            android:background="@drawable/caixa_de_texto"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:met_baseColor="@android:color/white"
+            app:met_primaryColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/activitySignUpTxtEmail"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/Email"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/edtEmail2"
+            android:textSize="22sp"
+            android:background="@drawable/caixa_de_texto"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:met_baseColor="@android:color/white"
+            app:met_primaryColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/activitySignUpTxtSenha"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Senha"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/edtSenha"
+            android:textSize="22sp"
+            android:background="@drawable/caixa_de_texto"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:met_baseColor="@android:color/white"
+            app:met_primaryColor="@android:color/white"/>
+
+
+        <!--        <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableEnd="@drawable/ic_email_black_24dp"
+                    android:drawableTint="@android:color/white"
+                    android:hint="@string/Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"
+                    tools:text="matheusrisovas@gmail.com" />-->
+
+        <!--        <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableEnd="@drawable/ic_lock_outline_black_24dp"
+                    android:drawableTint="@android:color/white"
+                    android:hint="@string/Senha"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="8"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"
+                    tools:text="1234" />-->
+
+
+        <info.hoang8f.widget.FButton
+            android:layout_gravity="center"
+            android:id="@+id/btnCadastrar"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:textSize="18sp"
+            android:text="Criar"
+            android:textColor="@android:color/black"
+            app:cornerRadius="30dp"
+            app:fButtonColor="@android:color/white"
+            app:shadowEnabled="false"
+            />
+        <TextView
+            android:id="@+id/activitySignUpTxtAjuda"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Já possui uma conta? Faça seu login aqui."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

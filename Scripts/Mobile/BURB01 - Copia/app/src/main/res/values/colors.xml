@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#a6a7a7</color>
+    <color name="colorAccent">#3b3d91</color>
+
+    <color name="btn_logar">#FF4081</color>
+    <color name="btn_logar_sombra">#FF6E072A</color>
+    <color name="btn_cadastrar">#FF4081</color>
+    <color name="btn_cadastrar_sombra">#FF6E072A</color>
+
+    <color name="menu_inferior_ativado">#131313</color>
+    <color name="menu_inferior_desativado">#00a9a9a9</color>
+
+    <color name="bg">#FF919DDC</color>
+
+    <color name="salvarPerfil">#3F51B5</color>
+
+    <color name="editarPerfilEditText">#3b3d91</color>
+
+    <color name="variacaoPositiva">#50d169</color>
+    <color name="variacaoNegativa">#ff002b</color>
+
+    <color name="spotifyGreen">#50d169</color>
+    <color name="facebookBlue">#3b5998</color>
+
+    <color name="app_tema_escuro">#2b2c4b</color>
+</resources>

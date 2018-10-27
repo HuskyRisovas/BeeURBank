@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mathr.burb01.Fragments.ObjetivosFragment"
+    android:orientation="vertical">
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_objetivos"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+</LinearLayout>
+     <android.support.design.widget.FloatingActionButton
+    android:id="@+id/addObjetivo"
+    android:layout_width="wrap_content"
+    android:src="@drawable/ic_add_black_24dp"
+    android:tint="@android:color/white"
+    app:borderWidth="0dp"
+         android:layout_marginEnd="12dp"
+         android:layout_marginTop="260dp"
+    app:rippleColor="@color/fbutton_color_green_sea"
+    android:backgroundTint="@color/fbutton_color_green_sea"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|bottom" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">BURB</string>
+
+    <!-- ACTIVITY SIGN IN e SIGN UP -->
+    <string name="Email">Email</string>
+    <string name="Senha">Senha</string>
+    <string name="NomeLogin">Nome</string>
+    <!-- -->
+
+    <!-- ACTIVITY MAIN -->
+    <string name="BeeUrBank">Bee UR Bank</string>
+    <string name="Logar">Logar</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <!-- -->
+
+    <!-- EDITAR PERFIL -->
+    <string name="Mudar_Foto"> Mudar foto</string>
+    <string name="Saldo">Saldo</string>
+    <string name="SaldoRS"> Saldo (R$)</string>
+    <string name="Nome">Nome </string>
+    <string name="Idade">Idade </string>
+    <string name="Altura">Altura </string>
+    <string name="Peso">Peso </string>
+    <string name="Sexo">Sexo</string>
+    <string name="Situacao">Situação</string>
+    <string name="Renda">Renda </string>
+    <string name="Endividado">Situação </string>
+    <!-- -->
+
+    <!-- ACTIVITY INFO -->
+    <string name="Pular">Pular</string>
+    <string name="Proximo">Próximo</string>
+    <string name="VamoLá">Vamos Lá!</string>
+    <string name="LogOut">Desconectar</string>
+    <!-- -->
+
+    <string name="btn_logar">Logar</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+
+    <!-- ACTIVITY SETTINGS -->
+    <string name="NightMode">Night Mode</string>
+    <string name="Periodo">Período do Balanço</string>
+    <string name="Info">Info</string>
+    <!-- -->
+
+    <!-- MENU INFERIOR -->
+    <string name="menu_inferior_guias">Guias </string>
+    <string name="menu_inferior_bolsa">Bolsa </string>
+    <string name="menu_inferior_perfil">Perfil </string>
+    <string name="menu_inferior_balanco">Balanço </string>
+    <string name="menu_inferior_config">Config </string>
+    <!-- -->
+
+    <!-- ADD OBJETIVO E TRANSAÇÃO -->
+    <string name="Objetivo">Objetivo</string>
+    <string name="Valor">Valor</string>
+    <string name="ValorRS">Valor (R$)</string>
+    <string name="Quando">Quando</string>
+    <string name="Data">Data (DD/MM/AAAA)</string>
+    <string name="Adicionar">Adicionar</string>
+    <string name="Transacao">Transação</string>
+    <!-- -->
+
+    <!-- FRAGMENT BALANÇO -->
+    <string name="Mes">Mês</string>
+    <string name="Semestre">Semestre</string>
+    <string name="Ano">Ano</string>
+    <string name="SaldoAtual">Saldo Atual: R$</string>
+    <string name="Investido">Investido: R$</string>
+    <string name="Transacoes">Transações</string>
+    <string name="Add">Add</string>
+    <!-- -->
+
+    <string name="botao_salvar">Salvar</string>
+    <string name="perfil_conquistas">Conquistas</string>
+    <string name="perfil_objetivos">Objetivos</string>
+    <string name="perfil_editar">Editar</string>
+
+    <string name="cifraoReal">R$:</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

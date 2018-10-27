@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/cardbackgroundcolor"
+    android:padding="16dp">
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Objetivo" />
+
+    <EditText
+        android:id="@+id/edtNomeObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/textcolor"
+        android:hint="@string/Objetivo"
+        android:inputType="textCapWords"
+        android:textColor="?attr/textcolor"
+        android:textColorHint="?attr/texthintcolor"/>
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Valor" />
+
+    <EditText
+        android:id="@+id/edtValorObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/textcolor"
+        android:hint="@string/ValorRS"
+        android:inputType="number"
+        android:textColor="?attr/textcolor"
+        android:textColorHint="?attr/texthintcolor"/>
+
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Quando" />
+
+    <EditText
+        android:id="@+id/edtDataObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/textcolor"
+        android:hint="@string/Data"
+        android:inputType="date"
+        android:textColor="?attr/textcolor"
+        android:textColorHint="?attr/texthintcolor"/>
+    <info.hoang8f.widget.FButton
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnAddObjetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Adicionar"
+        android:textColor="@android:color/white"
+        app:cornerRadius="10dp"
+        app:fButtonColor="@color/btn_logar"
+        app:shadowEnabled="false" />
+
+</LinearLayout>

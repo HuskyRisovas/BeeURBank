@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mathr.burb01">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Geral.MApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_bee_nuvens"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_bee_nuvens"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Geral.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Auth.SignUp"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Auth.SignIn"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Home" />
+        <activity android:name=".EditarPerfilActivity" />
+        <activity android:name=".GuiasInfoActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".MainActivity" />
+        <!-- android:theme="@style/MainScreen"/> -->
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".Bolsas"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="2dp"
+    android:layout_marginTop="0.5dp"
+    android:background="?attr/cardbackgroundcolor">
+    <LinearLayout
+        android:background="?attr/cardbackgroundcolor"
+        android:padding="8dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                   app:civ_border="true"
+                    app:civ_border_color="?attr/textcolor"
+                    app:civ_border_width="0.5dp"
+                    android:id="@+id/conquista_image"
+                    android:scaleType="centerCrop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/conquista_name"
+                        tools:text="Name of Conquista"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="16sp"
+                        android:gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/conquista_descricao"
+                        tools:text="Descrição da conquista"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="12sp"
+                        android:gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+<TextView
+    android:textColor="?attr/textcolor"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:gravity="center"
+    android:id="@+id/conquista_nivel"
+    android:layout_alignParentEnd="true"
+    android:text=""
+    android:background="@drawable/circulo"
+    android:layout_width="34dp"
+    android:layout_height="34dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/investidor"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</android.support.v7.widget.CardView>

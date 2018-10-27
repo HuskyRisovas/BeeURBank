@@ -1,0 +1,154 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mathr.burb01.Fragments.PerfilFragment"
+    android:id="@+id/perfil_layout"
+    android:background="?attr/backgroundcolor">
+
+    <LinearLayout
+        android:background="?attr/backgroundcolor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="?attr/backgroundcolor"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:background="?attr/backgroundcolor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    app:civ_border="true"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="?attr/textcolor"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="@android:color/black"
+                    app:civ_shadow_radius="2"
+                    android:id="@+id/perfilImagem"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="?attr/backgroundcolor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="?attr/textcolor"
+                    android:textSize="20sp"
+                    tools:text="Husky" />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txtInvestidor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="58dp"
+                    android:background="@drawable/investidor"
+                    android:gravity="center"
+                    android:text="Investidor"
+                    android:textColor="#FF51B53F"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="Investidor" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="?attr/backgroundcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/txtConquistas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/perfil_conquistas"
+                android:textColor="?attr/textcolor"
+                android:textSize="16sp"
+                tools:text="Conquistas" />
+
+            <TextView
+                android:id="@+id/txtObjetivos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/perfil_objetivos"
+                android:textColor="?attr/textcolor"
+                android:textSize="16sp"
+                tools:text="Objetivos" />
+
+            <TextView
+                android:id="@+id/txtEditarPerfil"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableStart="@drawable/ic_mode_edit_black_24dp"
+                android:drawableTint="?attr/textcolor"
+                android:gravity="start"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/perfil_editar"
+                android:textColor="?attr/textcolor"
+                android:textSize="16sp"
+                tools:text="Editar" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="?attr/backgroundcolor"
+            android:id="@+id/perfilFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

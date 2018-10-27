@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mathr.burb01.Home"
+    android:background="?attr/backgroundcolor">
+
+    <!-- TODO: Update blank fragment layout -->
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_weight="0.8"
+               android:layout_width="match_parent"
+               android:layout_height="0dp" >
+               <TextView
+                   android:gravity="center"
+                   android:textSize="22sp"
+                   android:textColor="?attr/textcolor"
+                   android:text="Empresa"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+               <TextView
+                   android:gravity="center"
+                   android:textSize="22sp"
+                   android:textColor="?attr/textcolor"
+                   android:text="Variação"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+               <TextView
+                   android:gravity="center"
+                   android:textSize="22sp"
+                   android:textColor="?attr/textcolor"
+                   android:text="Preço"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_weight="0.3"
+               android:layout_width="match_parent"
+               android:layout_height="0dp">
+               <TextView
+                   android:gravity="end"
+                   android:layout_marginEnd="10dp"
+                   android:textSize="12sp"
+                   android:textColor="?attr/textcolor"
+                   tools:text="Opa"
+                   android:id="@+id/horaDaConsulta"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent" />
+           </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            app:cardUseCompatPadding="true"
+            app:cardElevation="5dp"
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="?attr/cardbackgroundcolor">
+           <ListView android:layout_weight="9"
+            android:id="@+id/bolsaListView"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+       </LinearLayout>
+
+</FrameLayout>
