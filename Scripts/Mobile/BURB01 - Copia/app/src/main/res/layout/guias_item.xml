@@ -60,11 +60,17 @@
             android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-            <ImageView
+            <RatingBar
+
+                android:id="@+id/guia_ratingBar"
+                android:layout_marginTop="20dp"
+                android:layout_width="240dp"
+                android:layout_height="50dp" />
+            <!--<ImageView
                 android:layout_marginTop="20dp"
                 android:src="@drawable/rating_stars"
                 android:layout_width="100dp"
-                android:layout_height="20dp" />
+                android:layout_height="20dp" />-->
         </LinearLayout>
 
     </RelativeLayout>

@@ -28,7 +28,7 @@ public class SettingsActivity extends AppCompatActivity {
     ArrayList<String> periodoItems;
     ArrayAdapter<String> periodoAdapter;
 
-    ImageView info;
+    ImageView info,formInvest;
 
     Switch cor_app;
 
@@ -47,11 +47,20 @@ public class SettingsActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         info = (ImageView) findViewById(R.id.infoActivity);
+        formInvest = (ImageView) findViewById(R.id.formInvest_Activity);
 
         info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SettingsActivity.this,InfoActivity.class));
+                finish();
+            }
+        });
+
+        formInvest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SettingsActivity.this,FormInvestActivity.class));
                 finish();
             }
         });

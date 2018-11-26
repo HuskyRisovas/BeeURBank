@@ -36,7 +36,7 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
 
     ProgressBar progressBar;
 
-    TextView txtUserName;
+    TextView txtUserName, txtInvestidor;
 
     CircularImageView perfilImagem;
 
@@ -91,6 +91,7 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
         txtObjetivos = (TextView) getView().findViewById(R.id.txtObjetivos);
         txtEditarPerfil = (TextView) getView().findViewById(R.id.txtEditarPerfil);
         txtUserName = (TextView) getView().findViewById(R.id.txtUserName);
+        txtInvestidor = (TextView)getView().findViewById(R.id.txtInvestidor) ;
 
         perfilImagem = (CircularImageView) getView().findViewById(R.id.perfilImagem);
 
@@ -103,6 +104,8 @@ public class PerfilFragment extends Fragment implements View.OnClickListener {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String userName = dataSnapshot.child("Dados").child("nome").getValue().toString();
                 txtUserName.setText(userName);
+                String situacao = dataSnapshot.child("Dados").child("situacao").getValue().toString();
+                txtInvestidor.setText(situacao);
            final String url = dataSnapshot.child("Imagem").child("url").getValue().toString();
                 //Picasso.with(getActivity()).load(url).resize(720,1080).centerInside().into(perfilImagem);
                 Picasso.with(getActivity())

@@ -2,6 +2,7 @@ package com.example.mathr.burb01.ViewHolder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.mathr.burb01.Interface.ItemClickListener;
@@ -16,6 +17,7 @@ public class ConquistasViewHolder extends RecyclerView.ViewHolder implements Vie
 
     public TextView txtNomeConquista,txtDescricaoConquista,txtNivel;
     public CircularImageView imgConquista;
+    public ProgressBar pb;
 
     private ItemClickListener itemClickListener;
 
@@ -25,6 +27,8 @@ public class ConquistasViewHolder extends RecyclerView.ViewHolder implements Vie
         txtNomeConquista = (TextView)itemView.findViewById(R.id.conquista_name);
         txtDescricaoConquista = (TextView)itemView.findViewById(R.id.conquista_descricao);
         txtNivel = (TextView)itemView.findViewById(R.id.conquista_nivel);
+
+        pb = (ProgressBar)itemView.findViewById(R.id.conquista_progressBar) ;
 
         imgConquista = (CircularImageView)itemView.findViewById(R.id.conquista_image);
 

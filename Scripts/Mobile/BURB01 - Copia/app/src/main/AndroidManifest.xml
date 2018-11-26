@@ -30,6 +30,7 @@
         <activity android:name=".Home" />
         <activity android:name=".EditarPerfilActivity" />
         <activity android:name=".GuiasInfoActivity" />
+        <activity android:name=".FormInvestActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".MainActivity" />
         <!-- android:theme="@style/MainScreen"/> -->

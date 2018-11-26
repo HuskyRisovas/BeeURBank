@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.example.mathr.burb01.Interface.ItemClickListener;
 import com.example.mathr.burb01.Modelos.Conquistas;
@@ -78,6 +79,7 @@ public class ConquistasFragment extends Fragment {
                 viewHolder.txtNivel.setText(model.getNivel());
                 viewHolder.txtNomeConquista.setText(model.getNome());
                 viewHolder.txtDescricaoConquista.setText(model.getDescricao());
+                viewHolder.pb.setProgress((int)model.getProgresso());
                 //Picasso.with(getActivity()).load(model.getImagem()).into(viewHolder.imgConquista);
                 Picasso.with(getActivity())
                         .load(model.getImagem()).resize(480,854).centerInside()
@@ -92,7 +94,7 @@ public class ConquistasFragment extends Fragment {
                             public void onError() {
                                 //Try again online if cache failed
                                 Picasso.with(getActivity())
-                                        .load(model.getImagem()).resize(480,854)
+                                        .load(model.getImagem()).resize(800,800)
                                         .error(R.drawable.ic_add_black_24dp)
                                         .into(viewHolder.imgConquista, new Callback() {
                                             @Override

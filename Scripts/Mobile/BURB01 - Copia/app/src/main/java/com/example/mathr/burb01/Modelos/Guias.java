@@ -7,16 +7,24 @@ package com.example.mathr.burb01.Modelos;
 public class Guias {
 
     private String Nome,Imagem,Autor,Descricao;
-
+    private float Avaliacao;
     public Guias(){}
 
-    public Guias(String nome, String imagem, String autor, String descricao) {
+    public Guias(String nome, String imagem, String autor, String descricao, Float avaliacao) {
         Nome = nome;
         Imagem = imagem;
         Autor = autor;
         Descricao = descricao;
+        Avaliacao = avaliacao;
     }
 
+    public Float getAvaliacao() {
+        return Avaliacao;
+    }
+
+    public void setAvaliacao(Float avaliacao) {
+        Avaliacao = avaliacao;
+    }
     public String getNome() {
         return Nome;
     }

@@ -82,9 +82,11 @@ public class GuiasFragment extends Fragment {
             protected void populateViewHolder(final GuiasViewHolder viewHolder, final Guias model, int position) {
                 viewHolder.txtGuiaAutor.setText(model.getAutor());
                 viewHolder.txtGuiaNome.setText(model.getNome());
+                viewHolder.ratingBar.setEnabled(false);
+                viewHolder.ratingBar.setRating(model.getAvaliacao());
                 //Picasso.with(getActivity()).load(model.getImagem()).into(viewHolder.imgGuia);
                 Picasso.with(getActivity())
-                        .load(model.getImagem()).resize(480,854).centerInside()
+                        .load(model.getImagem()).resize(800,800).centerInside()
                         .networkPolicy(NetworkPolicy.OFFLINE)
                         .into(viewHolder.imgGuia, new Callback() {
                             @Override

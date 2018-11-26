@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <!-- android:background="#4c96f6" -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qual a melhor opção para descrever sua tolerância ao risco?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/formInvent_rb1-1"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Baixa: quero rentabilidade acima da poupança com preservação do poder de compra"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-2"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Regular: quero rentabilidade próxima a taxa de juros DI (CDI) e aceito eventuais riscos"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-3"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Média: estou disposto a assumir riscos maiores para superar a taxa de juros DI (CDI)"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-4"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Alta: estou disposto a assumir riscos elevados para alcançar retornos expressivos"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+</LinearLayout>

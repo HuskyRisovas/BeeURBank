@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <!-- android:background="#4c96f6" -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione abaixo os investimetnos que você tem ou já teve:"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/formInvent_rb1-1"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Poupança"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-2"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Títulos de renda fixa"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-3"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Tesouro direto"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-5"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Ações"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-6"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Mercado futuro - BM F"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/formInvent_rb1-7"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Derivativos"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/formInvent_rb1-8"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Fundos imobiliários"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/formInvent_rb1-9"
+            android:buttonTint="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text=" Nunca investi"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RadioGroup>
+
+</LinearLayout>

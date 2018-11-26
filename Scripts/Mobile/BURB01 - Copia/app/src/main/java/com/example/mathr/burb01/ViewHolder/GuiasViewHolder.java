@@ -3,6 +3,7 @@ package com.example.mathr.burb01.ViewHolder;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.mathr.burb01.Interface.ItemClickListener;
@@ -17,7 +18,7 @@ public class GuiasViewHolder extends RecyclerView.ViewHolder implements View.OnC
 
     public TextView txtGuiaNome,txtGuiaAutor;
     public CircularImageView imgGuia;
-
+    public RatingBar ratingBar;
     private ItemClickListener itemClickListener;
 
     public GuiasViewHolder(View itemView) {
@@ -25,6 +26,8 @@ public class GuiasViewHolder extends RecyclerView.ViewHolder implements View.OnC
 
         txtGuiaNome = (TextView)itemView.findViewById(R.id.guia_name);
         txtGuiaAutor = (TextView) itemView.findViewById(R.id.guia_autor);
+
+        ratingBar = (RatingBar)itemView.findViewById(R.id.guia_ratingBar);
 
         imgGuia = (CircularImageView) itemView.findViewById(R.id.guia_image);
 

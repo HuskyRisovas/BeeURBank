@@ -79,11 +79,11 @@
                     android:layout_marginTop="58dp"
                     android:background="@drawable/investidor"
                     android:gravity="center"
-                    android:text="Investidor"
+                    android:text=""
                     android:textColor="#FF51B53F"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    tools:text="Investidor" />
+                    />
 
             </RelativeLayout>
 
