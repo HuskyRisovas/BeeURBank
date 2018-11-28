@@ -87,7 +87,7 @@ public class BalancoFragment extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 saldo = dataSnapshot.child("Dados").child("saldo").getValue().toString();
                 String saldo2 = String.valueOf(saldo);
-                txtSaldo.setText(R.string.SaldoAtual + saldo2);
+                txtSaldo.setText("Saldo Atual: R$" + saldo2);
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {
